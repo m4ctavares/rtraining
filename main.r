@@ -1,5 +1,8 @@
 install.packages("dplyr")
-
+install.packages("gmodels")
+install.packages("rsample")
+install.packages("pROC")
+install.packages("rpart.plot")
 
 rm(list=ls())
 library(dplyr)
@@ -9,8 +12,8 @@ library(dplyr)
 #######################################################################################
 #######################################################################################
 
-setwd("https://raw.githubusercontent.com/m4ctavares/rtraining/branch/ds_sample_200508.rds")
-db <- readRDS("Dataset_aula_6.rds")
+setwd(".")
+db <- readRDS("ds_sample_200508.rds")
 
 ######################################################################
 ###################### Análise da Base de Dados ######################
